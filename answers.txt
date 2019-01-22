@@ -8,7 +8,7 @@ CONFIG_SSH_KEY=/root/.ssh/open.pub
 
 # Default password to be used everywhere (overridden by passwords set
 # for individual services or users).
-CONFIG_DEFAULT_PASSWORD=
+CONFIG_DEFAULT_PASSWORD=r3dh4t1!
 
 # The amount of service workers/threads to use for each service.
 # Useful to tweak when you have memory constraints. Defaults to the
@@ -39,7 +39,7 @@ CONFIG_NEUTRON_INSTALL=y
 CONFIG_HORIZON_INSTALL=y
 
 # Specify 'y' to install OpenStack Object Storage (swift). ['y', 'n']
-CONFIG_SWIFT_INSTALL=y
+CONFIG_SWIFT_INSTALL=n
 
 # Specify 'y' to install OpenStack Metering (ceilometer). ['y', 'n']
 CONFIG_CEILOMETER_INSTALL=y
@@ -57,7 +57,7 @@ CONFIG_GNOCCHI_INSTALL=y
 CONFIG_SAHARA_INSTALL=n
 
 # Specify 'y' to install OpenStack Orchestration (heat). ['y', 'n']
-CONFIG_HEAT_INSTALL=n
+CONFIG_HEAT_INSTALL=y
 
 # Specify 'y' to install OpenStack Database (trove) ['y', 'n']
 CONFIG_TROVE_INSTALL=n
@@ -95,7 +95,7 @@ CONFIG_DEBUG_MODE=n
 CONFIG_CONTROLLER_HOST=192.168.0.20
 
 # List the servers on which to install the Compute service.
-CONFIG_COMPUTE_HOSTS=192.168.0.20
+CONFIG_COMPUTE_HOSTS=192.168.0.30
 
 # List of servers on which to install the network service such as
 # Compute networking (nova network) or OpenStack Networking (neutron).
@@ -305,7 +305,7 @@ CONFIG_MARIADB_HOST=192.168.0.20
 CONFIG_MARIADB_USER=root
 
 # Password for the MariaDB administrative user.
-CONFIG_MARIADB_PW=0191e8d245a54e01
+CONFIG_MARIADB_PW=r3dh4t1!
 
 # Password to use for the Identity service (keystone) to access the
 # database.
@@ -330,7 +330,7 @@ CONFIG_KEYSTONE_ADMIN_EMAIL=root@localhost
 CONFIG_KEYSTONE_ADMIN_USERNAME=admin
 
 # Password to use for the Identity service 'admin' user.
-CONFIG_KEYSTONE_ADMIN_PW=e5d57d2592be4d4c
+CONFIG_KEYSTONE_ADMIN_PW=r3dh4t1!
 
 # Password to use for the Identity service 'demo' user.
 CONFIG_KEYSTONE_DEMO_PW=03fbc24ba3b442b0
@@ -551,7 +551,7 @@ CONFIG_CINDER_BACKEND=lvm
 # proof-of-concept installation of the Block Storage service (a file-
 # backed volume group is not suitable for production usage). ['y',
 # 'n']
-CONFIG_CINDER_VOLUMES_CREATE=y
+CONFIG_CINDER_VOLUMES_CREATE=n
 
 # Size of Block Storage volumes group. Actual volume size will be
 # extended with 3% more space for VG metadata. Remember that the size
@@ -820,7 +820,7 @@ CONFIG_NEUTRON_METADATA_PW=32e0deed5811431d
 
 # Specify 'y' to install OpenStack Networking's Load-Balancing-
 # as-a-Service (LBaaS). ['y', 'n']
-CONFIG_LBAAS_INSTALL=n
+CONFIG_LBAAS_INSTALL=y
 
 # Specify 'y' to install OpenStack Networking's L3 Metering agent
 # ['y', 'n']
@@ -1100,7 +1100,7 @@ CONFIG_MANILA_GLUSTERFS_PATH_TO_PRIVATE_KEY=
 CONFIG_MANILA_GLUSTERFS_GANESHA_SERVER_IP=
 
 # Specify 'y' to set up Horizon communication over https. ['y', 'n']
-CONFIG_HORIZON_SSL=n
+CONFIG_HORIZON_SSL=y
 
 # Secret key to use for Horizon Secret Encryption Key.
 CONFIG_HORIZON_SECRET_KEY=58c66126bc0a416599a20d6320842f5e
@@ -1159,7 +1159,7 @@ CONFIG_HEAT_AUTH_ENC_KEY=b7437914bb834b0e
 CONFIG_HEAT_KS_PW=PW_PLACEHOLDER
 
 # Specify 'y' to install the Orchestration CloudWatch API. ['y', 'n']
-CONFIG_HEAT_CLOUDWATCH_INSTALL=n
+CONFIG_HEAT_CLOUDWATCH_INSTALL=y
 
 # Specify 'y' to install the Orchestration CloudFormation API. ['y',
 # 'n']
@@ -1176,7 +1176,7 @@ CONFIG_HEAT_DOMAIN_ADMIN=heat_admin
 CONFIG_HEAT_DOMAIN_PASSWORD=PW_PLACEHOLDER
 
 # Specify 'y' to provision for demo usage and testing. ['y', 'n']
-CONFIG_PROVISION_DEMO=y
+CONFIG_PROVISION_DEMO=n
 
 # Specify 'y' to configure the OpenStack Integration Test Suite
 # (tempest) for testing. The test suite requires OpenStack Networking
